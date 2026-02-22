@@ -26,13 +26,26 @@
             <line x1="140" y1="0" x2="140" y2="500" stroke="#C9A84C" stroke-width="1" opacity="0.05"/>
             <line x1="0" y1="420" x2="1500" y2="420" stroke="#C9A84C" stroke-width="1" opacity="0.15"/>
             <line x1="0" y1="440" x2="1500" y2="440" stroke="#7A8480" stroke-width="1" opacity="0.15" stroke-dasharray="4 4"/>
-            <rect x="200" y="200" width="4" height="60" fill="#C0392B"/>
-            <circle cx="202" cy="180" r="3" fill="#C0392B"/>
-            <circle cx="202" cy="280" r="3" fill="#C0392B"/>
-            <text x="230" y="240" class="font-jp" font-size="52" fill="#F4EDD8" font-weight="800" letter-spacing="16">仕掛け帳</text>
-            <text x="235" y="275" class="font-en" font-size="16" fill="#C9A84C" font-weight="600" letter-spacing="8">SUBSCRIPTION MECHANISM</text>
-            <path d="M 600 500 L 800 200 L 1500 200" fill="none" stroke="#C9A84C" stroke-width="1" opacity="0.1"/>
-            <path d="M 650 500 L 850 250 L 1500 250" fill="none" stroke="#7A8480" stroke-width="1" opacity="0.15" stroke-dasharray="10 5"/>
+
+            <!-- 3. タイトルエリア (中央寄せ) -->
+            <g text-anchor="middle" transform="translate(750, 240)">
+                <!-- 紅（beni）のアクセント -->
+                <circle cx="0" cy="-60" r="3" fill="#C0392B"/>
+                <rect x="-2" y="-45" width="4" height="20" fill="#C0392B"/>
+                
+                <!-- タイトルテキスト -->
+                <!-- letter-spacingの余白分を考慮してわずかにX座標を右に調整し、視覚的な中央を保ちます -->
+                <text x="8" y="20" class="font-jp" font-size="56" fill="#F4EDD8" font-weight="800" letter-spacing="16">仕掛け帳</text>
+                <text x="4" y="60" class="font-en" font-size="16" fill="#C9A84C" font-weight="600" letter-spacing="8">SUBSCRIPTION MECHANISM</text>
+            </g>
+
+            <!-- 4. 背景の装飾ライン（テキストを避けて左右に配置） -->
+            <path d="M 0 200 L 400 200 L 600 500" fill="none" stroke="#C9A84C" stroke-width="1" opacity="0.1"/>
+            <path d="M 1500 200 L 1100 200 L 900 500" fill="none" stroke="#C9A84C" stroke-width="1" opacity="0.1"/>
+            <line x1="0" y1="250" x2="450" y2="250" stroke="#7A8480" stroke-width="1" opacity="0.15" stroke-dasharray="10 5"/>
+            <line x1="1050" y1="250" x2="1500" y2="250" stroke="#7A8480" stroke-width="1" opacity="0.15" stroke-dasharray="10 5"/>
+
+            <!-- 5. 右側のインサイト・分析風グラフィック（アプリのDonutChartをモチーフ） -->
             <g transform="translate(1150, 250)">
                 <circle cx="0" cy="0" r="180" fill="none" stroke="#C9A84C" stroke-width="0.5" opacity="0.3" stroke-dasharray="2 6"/>
                 <circle cx="0" cy="0" r="165" fill="none" stroke="#1F1C16" stroke-width="1"/>
